@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Onsidaca.MAU.MainPage"
+             Title="Login">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="X" Order="Primary" Priority="0" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Frame BorderColor="DarkGray" CornerRadius="0"  Margin="10">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="toplogoicon256" HorizontalOptions="Center" HeightRequest="60"/>
+                    <Label Text="Onsidaca Mobile Edition" Padding="10, 0, 0, 0" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="Black"/>
+                </StackLayout>
+
+                <Entry x:Name="txtEmail" Placeholder="Email" class="form-control" TextColor="Black" />
+                <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password" class="form-control" TextColor="Black" />
+                <Button x:Name="btnLogin" Text="Sign In" Clicked="btnLogin_Clicked" CornerRadius="0" class="btn btn-primary" TextColor="White" BackgroundColor="{StaticResource Primary}" />
+            </StackLayout>
+        </Frame>   
+        
+        <ActivityIndicator x:Name="actMain" IsVisible="false" IsRunning="True" ></ActivityIndicator>
+        <Button x:Name="btnTest" Text="Test" Clicked="btnTest_Clicked"  CornerRadius="0" TextColor="Black" BackgroundColor="{StaticResource Secondary}"/>
+
+    </StackLayout>
+    
+</ContentPage>

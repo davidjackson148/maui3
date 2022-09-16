@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             x:Class="Onsidaca.MAU.Pages.StartPage"
+             Title="StartPage">
+
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="8"></RowDefinition>
+            </Grid.RowDefinitions>
+            <scheduler:SfScheduler Grid.Row="0" x:Name="calSchedule" View="Month" DoubleTapped="calSchedule_DoubleTapped" />
+            <core:SfBusyIndicator Grid.Row="1" x:Name="pgBar" AnimationType="LinearMaterial" IsRunning="True" IsVisible="false"/>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
