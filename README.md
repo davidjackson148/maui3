@@ -1,3 +1,3 @@
 # maui3
 
-Navigating from MainPage to StartPage
+Navigating from MainPage (mainpage.xaml.cs line 59) to StartPage
